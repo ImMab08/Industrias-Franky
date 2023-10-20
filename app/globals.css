@@ -1,27 +1,129 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Antonio&family=Passion+One&family=Poppins&display=swap');
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* Establece un ancho delgado para la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 6px;
   }
+  
+/* Establece un color de fondo para la pista de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+  background-color: #13161C;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* Establece un color para el indicador de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+}
+
+/* Transiciones de fondo imagenes */
+.image-transition {
+  transition: transform 0.5s ease; /* Agrega una transición suave de 0.5 segundos */
+}
+
+/* Fondo blur */
+
+:root{
+    --blue:#022874;
+    --darkblue: hsl(200, 54%, 12%);
+    --tex-white: hsl(0, 0%, 100%);
+    --text-light-gray: hsl(0, 0%, 90%);
+    --body-bg-color: hsl(0, 0%, 0%);
+    --glass-bg-color: hsla(0, 0%, 100%, 0.05);
+    --blur: blur(10px);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--body-bg-color);
+    font-weight: 300px;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+body::after,
+body::before{
+    content: "";
+    position: fixed;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(150px);
+    opacity: 0.5;
+}
+
+body::before{
+    /* background-color: var(--blue); */
+    background-color: var(--body-bg-color);
+    left: 0;
+    bottom: 0;
+    transform: translate(-40%);
+}
+
+body::after{
+    /* background-color: var(--blue); */
+    background-color: var(--body-bg-color);
+    right: 0;
+    top: 0;
+    transform: translate(-40%);
+}
+
+h1 {
+  font-family: 'Anton', sans-serif;
+
+}
+h2 {
+  font-family: 'Antonio', sans-serif;
+}
+
+/* Text Grdient */
+.title {
+  background: #84CC16;
+  background: linear-gradient(to right, #84CC16 0%, #022874 80%);
+  background-clip: initial;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Animation */
+/* Contenedor de las imágenes */
+.slider-container {
+  display: flex;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  justify-content: center;
+}
+
+/* Imágenes */
+.container-logo {
+  width: 70px;
+  height: 70px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+  scroll-snap-align: center;
+}
+
+/* Animación del scroll */
+.slider-container {
+  animation: scrollLeft 30s linear infinite;
+}
+
+/* Puntos de inicio y fin de la animación */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
