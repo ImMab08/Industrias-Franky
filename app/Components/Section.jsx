@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 'use client'
 import React, { useEffect, useState } from "react";
+import { motion } from 'framer-motion'
 
 function LandingSection() {
   const [scrollY, setScrollY] = useState(0);
@@ -28,15 +29,15 @@ function LandingSection() {
   return (
     <section className="text-white h-screen w-screen text-center relative overflow-hidden">
 
-      <div className=" pt-44 lg:pt-48">
+      <div className=" pt-56 lg:pt-48">
           <h1 className="text-3xl lg:text-5xl font-normal">
             Si puedes imaginarlo,
           </h1>
           <h1 className="lg:pt-5 text-4xl lg:text-5xl font-extrabold">
-            podemos <span className=" title relative z-10">programarlo.</span>
+            podemos <span className="text-terciary relative z-10">programarlo.</span>
           </h1>
           <h1 className=" text-base lg:text-lg text-terciary pt-12 lg:pt-20 font-medium ">¡Qué esperas para entrar al mundo digital!</h1>
-          <a href="#about" className=" relative z-10 top-14 lg:top-20 transform transition-transform duration-300 ease-in-out hover:scale-95 bg-black rounded-xl p-3 lg:p-4 text-white font-semibold text-base lg:text-xl cursor-pointer border-2 ">¡Conoce más!</a>
+          <img className=" w-10 mt-5 mx-auto rounded-full" src="/img/arrow-down-section.svg" alt="Imagen" />
       </div>
 
       <div className="absolute top-0 bottom-0 h-full w-full z-0 flex flex-row items-center justify-between">

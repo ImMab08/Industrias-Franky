@@ -77,11 +77,11 @@ body::after{
     transform: translate(-40%);
 }
 
-h1 {
+.titleh1 {
   font-family: 'Anton', sans-serif;
 
 }
-h2 {
+.subtitleh2 {
   font-family: 'Antonio', sans-serif;
 }
 
@@ -101,6 +101,8 @@ h2 {
   overflow: hidden;
   scroll-snap-type: x mandatory;
   justify-content: center;
+  animation: scrollLeft 30s linear infinite;
+  margin-top: 20px;
 }
 
 /* Imágenes */
@@ -113,17 +115,105 @@ h2 {
   scroll-snap-align: center;
 }
 
-/* Animación del scroll */
-.slider-container {
-  animation: scrollLeft 30s linear infinite;
+.shadow-inner {
+  box-shadow: 0px 0px 76px 64px rgba(0,0,0,0.83) inset;
+  -webkit-box-shadow: 0px 0px 76px 64px rgba(0,0,0,0.83) inset;
+  -moz-box-shadow: 0px 0px 76px 64px rgba(0,0,0,0.83) inset;
 }
 
 /* Puntos de inicio y fin de la animación */
 @keyframes scrollLeft {
   0% {
-    transform: translateX(100%);
+    transform: translateX(140%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-130%);
   }
+}
+
+/* Text shadow */
+
+.text-shadown {
+  text-shadow: rgba(255,255,255,0.59) 0px 0px 22px;
+} 
+
+/* TOP */
+
+.custom-shape-divider-top-1698810401 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1698810401 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50px;
+}
+
+.custom-shape-divider-top-1698810401 .shape-fill {
+  fill: #000;
+}
+
+/* BOTTOM */
+
+.custom-shape-divider-bottom-1698814463 {
+  position:  relative;
+  top: 400px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1698814463 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50px;
+}
+
+.custom-shape-divider-bottom-1698814463 .shape-fill {
+  fill: #000;
+}
+
+/* Client top */
+.custom-shape-divider-top-1698864150 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1698864150 svg {
+  position: absolute;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1698864150 .shape-fill {
+  fill: #000;
+}
+
+/* Client bottom */
+
+.custom-shape-divider-bottom-1698864979 {
+  position: relative;
+  top: 2070px;  
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1698864979 svg {
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1698864979 .shape-fill {
+  fill: #000;
 }

@@ -1,10 +1,11 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import Section from './Components/Section'
 import Carousel from './Components/Carousel'
-import About from './Components/About'
 import Client from './Components/Client'
-import Review from './Components/Review'
+import Testimonial from './Components/Testimonials/Testimonial'
 import Form from './Components/Form'
+import Introduction from './Components/Introduction'
+import Proyectos from './Components/Proyectos'
 
 export default function Home() {
   return (
@@ -13,8 +14,12 @@ export default function Home() {
         <Section />
       </div>
 
-      <div id='about'   >
-        <About />
+      <div>
+        <Introduction />
+      </div>
+      
+      <div>
+        <Proyectos />
       </div>
 
       <div>
@@ -26,7 +31,7 @@ export default function Home() {
       </div>
 
       <div>
-        <Review />
+        <Testimonial />
       </div>
 
       <div>

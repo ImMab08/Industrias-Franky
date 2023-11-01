@@ -245,7 +245,7 @@ export default function Form() {
                         
                     <div className='flex flex-col'>
                         <label htmlFor="">Celular *</label>
-                        <input className=' border-b-[1px] bg-transparent' name='cellphone' type="number" placeholder='Celular' />
+                        <input className=' border-b-[1px] bg-transparent' name='cellphone' type="phone" placeholder='Celular' />
                     </div>
                 </div>
                 <div className='mt-5 flex flex-col'>
