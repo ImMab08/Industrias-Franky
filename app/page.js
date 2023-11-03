@@ -10,7 +10,7 @@ import Proyectos from './Components/Proyectos'
 export default function Home() {
   return (
     <>
-      <div id='home'> 
+      <div id='home' className=''> 
         <Section />
       </div>
 

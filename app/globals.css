@@ -207,7 +207,7 @@ body::after{
 /* Client bottom */
 
 .custom-shape-divider-bottom-1698864979 {
-  position: relative;
+  position: absolute;
   top: 2070px;  
   left: 0;
   width: 100%;
@@ -228,11 +228,13 @@ body::after{
 
 @media only screen and (max-width:600px) {
   .custom-shape-divider-bottom-1698864979 {
-    top: 2120px; 
+    top: 2350px; 
   }
   .custom-shape-divider-bottom-1698864979 svg {
+    position: relative;
     display: block;
     width: calc(100% + 1.3px);
     height: 20%;
+    bottom: 0;
   }
 }

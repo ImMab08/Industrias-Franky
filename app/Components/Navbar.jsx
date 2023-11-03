@@ -66,7 +66,7 @@ function Header() {
   return (
     <header
     id="landing-header"
-    className="bg-black p-6 2xl:p-8 px-10 flex items-center fixed top-0 w-full justify-between z-40 text-white"
+    className="bg-black p-6 2xl:p-8 flex items-center fixed top-0 w-full justify-between z-40 text-white"
     ref={headerRef}
   >
     <div className="flex flex-grow basis-0">
