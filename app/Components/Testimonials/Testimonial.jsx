@@ -13,7 +13,7 @@ export default function Testimonial() {
           initial = 'hidden'
           animate = 'show'
           exit = 'hidden'
-          className = 'my-5 text-white text-4xl text-center md:my-10 font-bold'
+          className = 'my-5 text-white text-3xl md:text-4xl text-center md:my-10 font-bold'
         >
           Algunos comentarios <br /><span className='text-terciary'>de nuestros clientes.</span>
           <motion.div

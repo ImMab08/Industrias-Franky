@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import Section from './Components/Section'
 import Carousel from './Components/Carousel'
-import Client from './Components/Client'
+import Now from './Components/Now'
 import Testimonial from './Components/Testimonials/Testimonial'
 import Form from './Components/Form'
 import Introduction from './Components/Introduction'
@@ -23,7 +23,7 @@ export default function Home() {
       </div>
 
       <div>
-        <Client />
+        <Now />
       </div>
 
       <div>

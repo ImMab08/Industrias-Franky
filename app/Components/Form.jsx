@@ -6,12 +6,12 @@ export default function Form() {
   return (
     <div className=' text-white mb-32'>
         <div className=' py-10'>
-            <h1 className='text-terciary font-extrabold text-5xl text-center'>Contactanos</h1>
+            <h1 className='text-terciary font-extrabold text-3xl md:text-5xl text-center'>Contactanos</h1>
         </div> 
-        <div className=' flex items-center justify-center'>
-            <form className=' border-[2px]  rounded-xl p-5' action="">
-                <h2 className=' font-bold text-2xl text-center'>Información</h2>
-                <hr className='  mx-16' />
+        <div className=' flex flex-col md:flex-row items-center justify-center'>
+            <form className=' border-[1px] md:border-[2px]  rounded-xl p-2 md:p-5' action="">
+                <h2 className=' font-bold text-xl md:text-2xl text-center'>Información</h2>
+                <hr className=' mx-32 md:mx-16' />
                 <div className='flex flex-col mt-5'>
                     <label className=' ' htmlFor="">Nombres y apellidos. *</label>
                     <input className=' border-b-[1px] bg-transparent' name='name' type="text" placeholder='Nombre Completo' />

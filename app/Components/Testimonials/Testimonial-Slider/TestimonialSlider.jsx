@@ -28,9 +28,9 @@ export default function TestimonialSlider() {
         >
             {TestimonialsData.map(({id, name, testimonial, image}) => (
                 <SwiperSlide className='text-xl' key = {id}>
-                    <img src={`img/${image}`} alt={name} width='80' height='80' className='mx-auto mt-10 rounded-full' />
-                    <h4 className='text-center mt-5 text-2xl text-white'>{name}</h4>
-                    <div className='mt-5 text-center text-white'>{testimonial}</div>
+                    <img src={`img/${image}`} alt={name} width='70' height='70' className='mx-auto mt-10 rounded-full' />
+                    <h4 className='text-center mt-5 text-xl md:text-2xl text-white'>{name}</h4>
+                    <div className='mt-5 text-center text-base md:text-xl text-white'>{testimonial}</div>
             </SwiperSlide>
             ))}
         </Swiper>

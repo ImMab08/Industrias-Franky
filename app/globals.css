@@ -196,6 +196,14 @@ body::after{
   fill: #000;
 }
 
+@media only screen and (max-width:600px) {
+  .custom-shape-divider-top-1698864150 svg {
+    position: absolute;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 10%;
+  }
+}
 /* Client bottom */
 
 .custom-shape-divider-bottom-1698864979 {
@@ -216,4 +224,15 @@ body::after{
 
 .custom-shape-divider-bottom-1698864979 .shape-fill {
   fill: #000;
+}
+
+@media only screen and (max-width:600px) {
+  .custom-shape-divider-bottom-1698864979 {
+    top: 2120px; 
+  }
+  .custom-shape-divider-bottom-1698864979 svg {
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 20%;
+  }
 }
