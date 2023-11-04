@@ -159,8 +159,7 @@ body::after{
 /* BOTTOM */
 
 .custom-shape-divider-bottom-1698814463 {
-  position:  relative;
-  top: 400px;
+  position: relative;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -179,36 +178,39 @@ body::after{
 }
 
 /* Client top */
-.custom-shape-divider-top-1698864150 {
+.custom-shape-divider-top-1699075035 {
+  position: relative;
   width: 100%;
   overflow: hidden;
   line-height: 0;
 }
 
-.custom-shape-divider-top-1698864150 svg {
-  position: absolute;
+.custom-shape-divider-top-1699075035 svg {
+  position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 150px;
+  height: 100px;
 }
 
-.custom-shape-divider-top-1698864150 .shape-fill {
+.custom-shape-divider-top-1699075035 .shape-fill {
   fill: #000;
 }
 
-@media only screen and (max-width:600px) {
-  .custom-shape-divider-top-1698864150 svg {
-    position: absolute;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 10%;
+@media (max-width: 768px) {
+  .custom-shape-divider-top-1699075035 {
+    height: 120px; /* Ajuste para móviles en la altura del contenedor */
+  }
+
+  .custom-shape-divider-top-1699075035 svg {
+    height: 80%; /* Ajuste para móviles en la altura del SVG */
   }
 }
+
 /* Client bottom */
 
-.custom-shape-divider-bottom-1698864979 {
-  position: absolute;
-  top: 2070px;  
+.custom-shape-divider-bottom-1699074210 {
+  position: relative;
+  bottom: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -216,25 +218,23 @@ body::after{
   transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1698864979 svg {
+.custom-shape-divider-bottom-1699074210 svg {
+  position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 150px;
+  height: 100px;
 }
 
-.custom-shape-divider-bottom-1698864979 .shape-fill {
+.custom-shape-divider-bottom-1699074210 .shape-fill {
   fill: #000;
 }
 
-@media only screen and (max-width:600px) {
-  .custom-shape-divider-bottom-1698864979 {
-    top: 2350px; 
+@media (max-width: 768px) {
+  .custom-shape-divider-bottom-1699074210 {
+    height: 120px; /* Ajuste para móviles en la altura del contenedor */
   }
-  .custom-shape-divider-bottom-1698864979 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 20%;
-    bottom: 0;
+
+  .custom-shape-divider-bottom-1699074210 svg {
+    height: 80%; /* Ajuste para móviles en la altura del SVG */
   }
 }

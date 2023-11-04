@@ -4,19 +4,19 @@ import '../globals.css'
 
 export default function Form() {
   return (
-    <div className=' text-white mb-32'>
+    <div className=' text-white mx-[50px] mb-10 md:mb-32 w-auto'>
         <div className=' py-10'>
             <h1 className='text-terciary font-extrabold text-3xl md:text-5xl text-center'>Contactanos</h1>
         </div> 
-        <div className=' flex flex-col md:flex-row items-center justify-center'>
-            <form className=' border-[1px] md:border-[2px]  rounded-xl p-2 md:p-5' action="">
+        <div className='flex flex-col md:flex-row items-center justify-center'>
+            <form className=' border-[1px] md:border-[2px] rounded-xl p-2 md:p-5 w-full md:w-1/2' action="">
                 <h2 className=' font-bold text-xl md:text-2xl text-center'>Información</h2>
                 <hr className=' mx-32 md:mx-16' />
                 <div className='flex flex-col mt-5'>
                     <label className=' ' htmlFor="">Nombres y apellidos. *</label>
                     <input className=' border-b-[1px] bg-transparent' name='name' type="text" placeholder='Nombre Completo' />
                 </div>
-                <div className='flex mt-5 '>
+                <div className=' mt-5 '>
                     <div className=''>
                         <label className='my-2 ' htmlFor="">Indicador</label>
                         <div className='pr-10'> 
@@ -243,9 +243,9 @@ export default function Form() {
                         </div>
                     </div>
                         
-                    <div className='flex flex-col'>
+                    <div className='flex flex-col mt-5 '>
                         <label htmlFor="">Celular *</label>
-                        <input className=' border-b-[1px] bg-transparent' name='cellphone' type="phone" placeholder='Celular' />
+                        <input className='  border-b-[1px] bg-transparent' name='cellphone' type="phone" placeholder='Celular' />
                     </div>
                 </div>
                 <div className='mt-5 flex flex-col'>
@@ -253,11 +253,11 @@ export default function Form() {
                     <input className='border-b-[1px] bg-transparent' name='email' type="email" placeholder='Correo Electronico' />
                 </div>
                 <div className='mt-5 flex flex-col items-center'>
-                    <textarea name="" class="box border-[1px] bg-transparent box w-[100%]" placeholder="Mensaje" id="" cols="30" rows="10"></textarea>
+                    <textarea name="" class="box border-[1px] bg-transparent box w-[100%] " placeholder="Mensaje" id="" cols="30" rows="10"></textarea>
                     <input className=' transform transition-transform duration-300 ease-in-out hover:scale-110 border-2 rounded-xl mt-5 cursor-pointer w-[30%]' type="submit" value="Enviar mensaje" class="btn" />
                 </div>
             </form>
-            <img className=' w-[40%]' src="img/Online world-cuate.png" alt="" />
+            <img className='w-full md:w-1/2 object-contain' src="img/Online world-cuate.png" alt="" />
         </div>
         
     </div>

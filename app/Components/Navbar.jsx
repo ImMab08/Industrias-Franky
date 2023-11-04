@@ -76,26 +76,24 @@ function Header() {
     </div>
 
     {/* Ícono de barras para dispositivos móviles */}
-    <div className="block xl:hidden relative left-[200px]">
-      <a href="#" onClick={toggleMobileMenu} >
-        <img className={` w-10 transform duration-300 ${isMobileMenuOpen ? 'rotate-90' : ''}`} src="img/bars-svgrepo-com.svg" alt="Menu" />
-      </a>
+    <div className="block md:hidden relative left-[200px]">
+      <img onClick={toggleMobileMenu} className={` cursor-pointer w-10 transform duration-300 ${isMobileMenuOpen ? 'rotate-90' : ''}`} src="img/bars-svgrepo-com.svg" alt="Menu" />
     </div>
 
     {/* Menú para dispositivos móviles */}
     {isMobileMenuOpen && (
-      <nav className="block xl:hidden absolute top-16 right-4 bg-black p-4">
+      <nav className="block md:hidden absolute top-16 right-4 bg-black p-4">
         <ul className="flex flex-col text-white">
           <li><a href="/">Inicio</a></li>
           <li><Link href={"servicios"}>Servicios</Link></li>
-          <li><a href="/#about">Nosotros</a></li>
+          <li><a href="/t">Nosotros</a></li>
           <li><Link href={"contacto"}>Contactanos</Link></li>
         </ul>
       </nav>
     )}
 
     {/* Menú principal */}
-    <nav className="hidden xl:block sm:hidden ">
+    <nav className="hidden md:block sm:hidden ">
       <ul className="flex text-sm 2xl:[&>li>a]:text-xl [&>li>a]:font-bold [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-base [&>li>a]:inline-block [&>li>a]:px-5 [&>li>a]:py-2">
         <li><a href="/">Inicio</a></li>
         <li><Link href={"servicios"}>Servicios</Link></li>
@@ -105,7 +103,7 @@ function Header() {
   
     <nav className="flex flex-grow justify-end basis-0">
       <ul className="flex text-sm 2xl:[&>li>a]:text-xl [&>li>a]:font-bold [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 [&>li>a]:text-base">
-        <li className="hidden xl:block sm:hidden"><Link href={"contacto"}>Contactanos</Link></li>
+        <li className="hidden md:block sm:hidden"><Link href={"contacto"}>Contactanos</Link></li>
       </ul>
     </nav>
 
