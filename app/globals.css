@@ -238,3 +238,34 @@ body::after{
     height: 80%; /* Ajuste para móviles en la altura del SVG */
   }
 }
+
+/* Navbard */
+@media (max-width: 768px) {
+  /* Agregar estilos específicos para móviles */
+  header {
+    width: 100%;
+  }
+}
+
+/* Contact */
+
+.w-contact {
+  width: 676px;
+  height: 467px;
+  background: rgb(18,35,43);
+  background: linear-gradient(157deg, rgba(18,35,43,1) 0%, rgba(52,86,37,1) 39%, rgba(132,204,22,1) 100%);
+  border-radius: 65% 35% 60% 40% / 51% 66% 34% 49% ;
+}
+
+.floating-animation {
+  animation: floating 4s ease-in-out infinite; /* Puedes ajustar el tiempo y la curva de animación según tus preferencias */
+}
+
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

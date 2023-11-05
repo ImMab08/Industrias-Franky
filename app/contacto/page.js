@@ -3,45 +3,38 @@ import React from 'react'
 
 export default function page() {
   return (
-    <div className=''>
+    <div className=' flex justify-center '>
+      <img className=" absolute w-[150px] left-16 top-[90px] rotate-45 floating-animation" src="/img/Astronaut-pana.png" alt="Imagen" />
+      <img className=" absolute w-[200px] right-0 bottom-0 floating-animation" src="/img/Astronaut-rafiki.png" alt="Imagen" />
 
-      <div className='  mt-28 mb-20'>
-        <h1 className='text-center text-terciary font-black text-5xl mb-10'>¿Tienes alguna consulta?</h1>
+      <div className='w-contact  mt-28 mb-20'>
+        <h1 className='text-center mt-20 text-white font-black text-3xl mb-5'>¿Tienes alguna <br/> consulta?</h1>
+        <div className=' flex justify-center items-center text-white'>
 
-        <div className=' mx-32  '>
-          <div className=' flex justify-center items-center'>
-            
-            <div className='flex flex-col '>
-              <div className=''>
-                <h3 className='text-white mb-2'>Escribenos a nuestro Whatsapp</h3>
-                <div className='flex'>
-                  <img className=" w-5 mr-2" src='/img/whatsapp.svg' alt="WhatsApp logo" />
-                  <p className='text-white'> +57 317 550 5934</p>
-                </div>  
-              </div>
+          <div className='flex flex-col items-center '>
 
-              <div className='mt-5'>
-                <h3 className='text-white mb-2'>O envianos un correo</h3>
-                <div className='flex'>
-                  <img className=" w-5 mr-2" src='/img/email.svg' alt="Email image" />
-                  <p className='text-white'> industriasfranky15@gmail.com</p>
-                </div>  
-              </div>
-
-              <div className='mt-5'>
-                <h3 className='text-white mb-2'>También puedes visitarnos en cualquier momento</h3>
-                <div className='flex'>
-                  <img className=" w-5 mr-2" src='/img/location.svg' alt="Location image" />
-                  <p className='text-white'>Calle 11b # 11-56 <br /> Cali - Colombia </p>
-                </div>  
-              </div>
+            <h3 className=' mb-2 font-bold text-lg'>Escribenos a nuestro Whatsapp</h3>
+            <div className='flex'>
+              <img className=" w-5 mr-2" src='/img/whatsapp.svg' alt="WhatsApp logo" />
+              <p className=''> +57 317 550 5934</p>
             </div>
-            <img className=" w-96 m-10" src='/img/contact.png' alt="contact picture" />
-            
+
+            <h3 className='mt-5 font-bold text-lg'>Envianos un correo</h3>
+            <div className='flex'>
+              <img className=" w-5 mr-2" src='/img/email.svg' alt="Email image" />
+              <p className=''> industriasfranky15@gmail.com</p>
+            </div>  
+
+            <h3 className='mt-5 font-bold text-lg'>También puedes visitarnos en cualquier momento</h3>
+            <div className='flex'>
+              <img className=" w-5 mr-2" src='/img/location.svg' alt="Location image" />
+              <p className=''>Calle 11b # 11-56 <br /> Cali - Colombia </p>
+            </div>
+
           </div>
+
         </div>
       </div>
-
     </div>
   )
 }

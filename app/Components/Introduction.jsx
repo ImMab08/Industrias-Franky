@@ -4,7 +4,7 @@ import '../globals.css';
 
 export default function Introduction() {
   return (
-    <div className=' w-full'>
+    <div id='about' className=' w-full'>
       <div class="custom-shape-divider-top-1698810401 bg-[#0c0c0c]">
         <svg
           data-name="Layer 1"

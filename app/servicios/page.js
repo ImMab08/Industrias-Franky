@@ -5,7 +5,6 @@ import { motion } from "framer-motion"
 import Servicios from  '../Components/Servicios'
 import styled, { keyframes } from 'styled-components';
 import { useState, useEffect } from 'react';
-import Plan from '../Components/Planes/Plan'
 import '../globals.css'
 
 const visible = {

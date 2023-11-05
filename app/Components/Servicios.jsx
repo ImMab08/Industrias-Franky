@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
+import Link from "next/link";
 
 function About() {
   return (
@@ -14,9 +15,9 @@ function About() {
               Creamos
             </a>
             <h1 className="text-white text-2xl lg:text-4xl font-extrabold mb-2">Páginas web y tiendas en linea.</h1>
-            <p className=" text-base lg:text-xl font-normal text-gray-400 my-6">Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers.</p>
+            <p className=" text-base lg:text-xl font-normal text-gray-400 my-6">Transformamos tu visión en una presencia digital impactante. Desarrollamos sitios web y tiendas online a medida para potenciar tu negocio en línea. ¡Destaca en la web con nuestro diseño y funcionalidad experta!</p>
             <a href="#" className="inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-white rounded-lg bg-primary hover:bg-terciary focus:ring-4">
-              Conoce más
+              <Link href={"contacto"}>Conoce más</Link>
               <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
               </svg>
@@ -33,8 +34,8 @@ function About() {
               Diseñamos
             </a>
             <h2 className="text-white text-2xl font-extrabold mb-2">Landing page y blogs.</h2>
-            <p className=" text-base lg:text-lg font-normal text-gray-400 mb-4">Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers.</p>
-            <a href="#" className="text-terciary hover:underline font-medium text-base lg:text-lg inline-flex items-center">Conoce más
+            <p className=" text-base lg:text-lg font-normal text-gray-400 mb-4">¿Quieres cautivar audiencias y convertirlas en clientes? Creamos blogs dinámicos y landing pages impactantes para potenciar tu presencia online. Atrae, engancha y convierte con nuestro diseño y contenido experto.</p>
+            <a href="#" className="text-terciary hover:underline font-medium text-base lg:text-lg inline-flex items-center"><Link href={"contacto"}>Conoce más</Link>
               <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
             </svg>
@@ -48,8 +49,8 @@ function About() {
               Programamos
             </a>
             <h2 className="text-white text-2xl font-extrabold mb-2">Software para tus necesidades.</h2>
-            <p className=" text-base lg:text-lg font-normal text-gray-400 mb-4">Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers.</p>
-            <a href="#" className="text-terciary hover:underline font-medium text-base lg:text-lg inline-flex items-center">Conoce más
+            <p className=" text-base lg:text-lg font-normal text-gray-400 mb-4">Desarrollamos software a medida para potenciar tu negocio. Soluciones personalizadas para impulsar tu presencia digital con eficacia.</p>
+            <a href="#" className="text-terciary hover:underline font-medium text-base lg:text-lg inline-flex items-center"><Link href={"contacto"}>Conoce más</Link>
               <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
               </svg>
