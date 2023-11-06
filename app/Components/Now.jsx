@@ -15,7 +15,7 @@ export default function Now() {
         </svg>
       </div>
 
-      <div className='my-10 md:my-20 mx-24'>
+      <div className='my-10 md:my-20'>
         <h3 className=' font-extrabold text-base md:text-xl text-center'>¡No esperes más para dar el salto!</h3>
         <div className='transform transition-transform duration-300 ease-in-out hover:scale-110'>
           <h1 className='mt-2 subtitleh2 font-extrabold text-4xl md:text-5xl text-center '><Link href={"contacto"}>CONTACTANOS <span className=''>AHORA</span></Link></h1>

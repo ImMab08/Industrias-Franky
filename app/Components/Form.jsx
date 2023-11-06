@@ -254,7 +254,7 @@ export default function Form() {
                 </div>
                 <div className='mt-5 flex flex-col items-center'>
                     <textarea name="" class="box border-[1px] bg-transparent box w-[100%] " placeholder="Mensaje" id="" cols="30" rows="10"></textarea>
-                    <input className=' transform transition-transform duration-300 ease-in-out hover:scale-110 border-2 rounded-xl mt-5 cursor-pointer w-[30%]' type="submit" value="Enviar mensaje" class="btn" />
+                    <input className=' transform transition-transform duration-300 ease-in-out hover:scale-110 border-2 rounded-xl mt-5 cursor-pointer w-[50%] md:w-[30%]' type="submit" value="Enviar mensaje" class="btn" />
                 </div>
             </form>
             <img className='w-full md:w-1/2 object-contain' src="img/Online world-cuate.png" alt="" />

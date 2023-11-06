@@ -27,7 +27,7 @@ function LandingSection() {
   const [image1Transform, image2Transform] = calculateImageTransform();
 
   return (
-    <section className="text-white h-screen mt-10 text-center relative overflow-hidden flex items-center justify-center">
+    <section className="text-white h-[400px] md:min-h-screen mt-20 text-center relative overflow-hidden flex items-center justify-center">
 
       <div className=" ">
           <h1 className="text-3xl lg:text-5xl font-normal">
