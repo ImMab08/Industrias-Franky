@@ -85,7 +85,7 @@ body::after{
   font-family: 'Antonio', sans-serif;
 }
 
-/* Text Grdient */
+/* Text Gradient */
 .title {
   background: #84CC16;
   background: linear-gradient(to right, #84CC16 0%, #022874 80%);
@@ -160,6 +160,7 @@ body::after{
 
 .custom-shape-divider-bottom-1698814463 {
   position: relative;
+  bottom: 0;
   left: 0;
   width: 100%;
   overflow: hidden;

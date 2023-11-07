@@ -59,8 +59,8 @@ export default function Page() {
       className=' max-w-screen'>
       <motion.div 
         
-        className=' mt-32 md:mx-10'>
-        <div className='text-center md:text-left md:flex items-center justify-center'>
+        className='  mt-32 md:mx-10'>
+        <div className='text-center  md:text-left md:flex items-center justify-center'>
           <div className=" flex flex-col md:w-[500px]">
             <h1 className=' text-white font-bold text-3xl lg:text-5xl'>Llevamos tu empresa, negocio o tus servicios al <span className='text-terciary'>mundo digital.</span></h1>
             <div className="mt-10">

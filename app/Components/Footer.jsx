@@ -4,7 +4,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div>
+    <div  className='h-screen'>
         <footer className="bg-black">
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
@@ -39,7 +39,7 @@ function Footer() {
                     <div>
                         <h2 className="mb-6 text-sm font-semibold uppercase text-white">Legal</h2>
                         <ul className="text-gray-400 font-medium">
-                            <li className="mb-4">
+                            <li className="">
                                 <a href="#" className="hover:underline">Privacy Policy</a>
                             </li>
                             <li>
