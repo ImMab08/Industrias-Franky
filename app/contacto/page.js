@@ -5,7 +5,7 @@ export default function page() {
   return (
     <div 
       style={{
-        backgroundImage: 'url("img/track.png")',
+        backgroundImage: 'url(img/track.png)',
         position: 'relative',
         overflow: 'hidden',
         boxShadow: 'inset 0 0 0 1000px rgba(0, 0, 0, 0.5)',
@@ -13,7 +13,7 @@ export default function page() {
       }}
       className=' flex justify-center items-center md:mt-28 md:mb-20'>
       <img className=" absolute w-[80px] md:w-[150px] left-5 md:left-16 top-[150px] md:top-[40px] rotate-45 floating-animation" src="/img/Astronaut-pana.png" alt="Imagen" />
-      <img className=" absolute w-[120px] md:w-[200px] right-0 bottom-0 floating-animation" src="/img/Astronaut-rafiki.png" alt="Imagen" />
+      <img className=" absolute w-[120px] md:w-[200px] right-0 bottom-32 floating-animation" src="/img/Astronaut-rafiki.png" alt="Imagen" />
 
       <div className='w-contact '>
         <h1 className='text-center mt-10 md:mt-20 text-white font-black text-2xl md:text-3xl mb-5'>¿Tienes alguna <br/> consulta?</h1>

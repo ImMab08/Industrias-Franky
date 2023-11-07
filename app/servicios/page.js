@@ -25,7 +25,7 @@ const moveBackground = keyframes`
 `;
 
 const StyledComponent = styled.div`
-  background-image: url("img/track.png");
+  background-image: url(img/track.png);
   position: relative;
   animation: ${moveBackground} 100s linear infinite;
 `;
