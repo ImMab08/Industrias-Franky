@@ -26,7 +26,6 @@ const moveBackground = keyframes`
 
 const StyledComponent = styled.div`
   background-image: url("img/track.png");
-  height: 600px;
   position: relative;
   animation: ${moveBackground} 100s linear infinite;
 `;
@@ -60,16 +59,16 @@ export default function Page() {
       className=' max-w-screen'>
       <motion.div 
         
-        className=' mt-32 mx-10'>
-        <div className=' lg:flex items-center justify-center'>
-          <div className=" flex flex-col w-[500px]">
-            <h1 className=' text-white font-bold text-xl lg:text-5xl'>Llevamos tu empresa, negocio o tus servicios al <span className='text-terciary'>mundo digital.</span></h1>
+        className=' mt-32 md:mx-10'>
+        <div className='text-center md:text-left md:flex items-center justify-center'>
+          <div className=" flex flex-col md:w-[500px]">
+            <h1 className=' text-white font-bold text-3xl lg:text-5xl'>Llevamos tu empresa, negocio o tus servicios al <span className='text-terciary'>mundo digital.</span></h1>
             <div className="mt-10">
-              <h2 className='text-white font-bold text-2xl'> Conoce lo que tenemos para ofrecerte.</h2>
+              <h2 className='text-white font-bold text-xl md:text-2xl'> Conoce lo que tenemos para ofrecerte.</h2>
               <img className=" mx-auto bottom-4 w-10" src='img/arrow-down-svgrepo-com.svg' alt="down-arrow picture" />
             </div>
           </div>
-            <img className=" mt-5 lg:mt-0 ml-12 w-[300px] lg:w-[32%]" src='img/Programmer-amico.png' alt="services picture" />
+            <img className=" mt-5 mx-auto md:mx-0 mdfirst-letter::mt-0 md:ml-12 w-[300px] lg:w-[32%]" src='img/Programmer-amico.png' alt="services picture" />
         </div>
 
         <div className="mt-5">
@@ -79,14 +78,14 @@ export default function Page() {
 
       </motion.div>
 
-      <StyledComponent className="max-w-screen flex items-center justify-center shadow-inner">
-      <div className="flex items-center content-between ">
+      <StyledComponent className=" md:max-w-screen flex items-center justify-center shadow-inner">
+      <div className="md:flex md:items-center md:content-between ">
         <img
-          className="w-[150px] h-[150px] relative z-10 left-28"
+          className=" hidden md:block w-[80px] h-[80px] left-[200px] top-[400px] md:w-[150px] md:h-[150px] relative z-10 md:left-28 md:top-0"
           src={`img/Capa-${rocketImage}.png`} // Utiliza la imagen según el estado actual
           alt="services picture"
         />
-        <div className="ml-[300px] w-[600px]">
+        <div className="md:ml-[300px] md:w-[600px]">
           <img src='img/textxd.png' alt="services picture"/>
         </div>
       </div>

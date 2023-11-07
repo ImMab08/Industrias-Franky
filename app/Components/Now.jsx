@@ -6,7 +6,7 @@ import '../globals.css';
 
 export default function Now() {
   return (
-    <div className=' h-full bg-terciary text-black'>
+    <div className=' h-full bg-[#0c0c0c] text-white'>
       <div className='custom-shape-divider-top-1699075035'>
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
@@ -15,11 +15,10 @@ export default function Now() {
         </svg>
       </div>
 
-      <div className='my-10 md:my-20'>
+      <div className='mx-20 my-10 md:my-20'>
         <h3 className=' font-extrabold text-base md:text-xl text-center'>¡No esperes más para dar el salto!</h3>
         <div className='transform transition-transform duration-300 ease-in-out hover:scale-110'>
-          <h1 className='mt-2 subtitleh2 font-extrabold text-4xl md:text-5xl text-center '><Link href={"contacto"}>CONTACTANOS <span className=''>AHORA</span></Link></h1>
-          <div className=' border-black rounded-xl border-2 mx-[200px] '></div>
+          <h1 className='mt-2 subtitleh2 font-extrabold text-3xl md:text-5xl text-center '><Link href={"contacto"}>CONTACTANOS <span className=''>AHORA</span></Link></h1>
         </div>
       </div>
       

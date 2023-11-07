@@ -1,10 +1,22 @@
 /* eslint-disable @next/next/no-img-element */
 'use client'
 import Link from "next/link";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import '../globals.css'
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isRotated, setIsRotated] = useState(false);
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+    setIsRotated(false);
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+    setIsRotated(!isRotated)
+  };
   const menuBackdropRef = useRef(null);
   const headerRef = useRef(null);
 
@@ -61,14 +73,28 @@ function Header() {
   return (
     <header
       id="landing-header"
-      className=" bg-black p-6 2xl:p-8 flex justify-between items-center fixed top-0 w-screen z-40 text-white"
+      className=" bg-black p-6 2xl:p-8 md:flex md:justify-between items-center fixed top-0 w-screen z-40 text-white"
       ref={headerRef}
     >
-      <div className="flex">
+      <div className="flex items-center justify-between ">
         <a href="/">
           <img src="img/logo-industriasfranky-blanco.png" alt="logo-industriasfranky" className=" w-36 2xl:w-44" />
         </a>
+        <img className= {`w-12 md:hidden ${isRotated ? 'rotate-90 transition-transform duration-300' : 'transition-transform duration-300 ' }`} src="img/bars-svgrepo-com.svg" alt="" onClick={toggleMenu} />
       </div>
+
+      {isMenuOpen && ( // Muestra el menú si isMenuOpen es true
+        <nav className={`md:hidden sm:hidden overflow-hidden ${isMenuOpen ? 'mobile-nav-open' : 'mobile-nav-closed'}`}>
+          <div className=" my-5 border-b-2"></div>
+          <ul className=" text-sm text-center [&>li>a]:font-bold [&>li>a]:text-base [&>li>a]:inline-block [&>li>a]:px-5 [&>li>a]:py-2">
+            <li><a href="/" onClick={closeMenu}>Inicio</a></li>
+            <li><Link href={"servicios"} onClick={closeMenu}>Servicios</Link></li>
+            <li><a href="/#about" onClick={closeMenu}>Nosotros</a></li>
+            <li><Link href={"contacto"} onClick={closeMenu}>Contactanos</Link></li>
+          </ul>
+          <div className=" my-5 border-b-2"></div>
+        </nav>
+      )}
 
       <nav className="hidden md:block sm:hidden ">
         <ul className="flex text-sm 2xl:[&>li>a]:text-xl [&>li>a]:font-bold [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-base [&>li>a]:inline-block [&>li>a]:px-5 [&>li>a]:py-2">

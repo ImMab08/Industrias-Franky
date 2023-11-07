@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function About() {
   return (
-    <section className=" px-[115px]">
+    <section className=" md:px-[115px]">
       <div className="py-2 px-4 mx-auto  lg:py-16">
         <div className=" flex bg-black border border-terciary rounded-lg p-8 md:p-12 mb-8">
           <div className=''>

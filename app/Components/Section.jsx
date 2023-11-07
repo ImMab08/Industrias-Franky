@@ -37,7 +37,7 @@ function LandingSection() {
             podemos <span className="text-terciary relative z-10">programarlo.</span>
           </h1>
           <h1 className=" text-base lg:text-lg text-terciary pt-12 lg:pt-20 font-medium ">¡Qué esperas para entrar al mundo digital!</h1>
-          <img className=" w-10 mt-5 mx-auto rounded-full" src="/img/arrow-down-section.svg" alt="Imagen" />
+          <img className=" w-10 mt-20 md:mt-5 mx-auto rounded-full" src="/img/arrow-down-section.svg" alt="Imagen" />
       </div>
 
       <div className="absolute top-0 bottom-0 h-full w-full z-0 flex flex-row items-center justify-between">

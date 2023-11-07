@@ -241,7 +241,6 @@ body::after{
 
 /* Navbard */
 @media (max-width: 768px) {
-  /* Agregar estilos específicos para móviles */
   header {
     width: 100%;
   }
@@ -257,6 +256,14 @@ body::after{
   border-radius: 65% 35% 60% 40% / 51% 66% 34% 49% ;
 }
 
+@media (max-width: 768px) {
+  /* Agregar estilos específicos para móviles */
+  .w-contact {
+    width: 376px;
+    height: 367px;
+  }
+}
+
 .floating-animation {
   animation: floating 4s ease-in-out infinite; /* Puedes ajustar el tiempo y la curva de animación según tus preferencias */
 }
@@ -269,3 +276,28 @@ body::after{
     transform: translateY(-10px);
   }
 }
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* MENU */
+
+.mobile-nav-open {
+  max-height: 500px;
+  transition: max-height 0.5s ease;
+}
+
+.mobile-nav-closed {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+
+

@@ -4,7 +4,7 @@ import '../globals.css'
 
 export default function Form() {
   return (
-    <div className=' text-white mx-[50px] mb-10 md:mb-32 w-auto'>
+    <div className=' text-white mx-[30px] mb-10 md:mb-32 w-auto'>
         <div className=' py-10'>
             <h1 className='text-terciary font-extrabold text-3xl md:text-5xl text-center'>Contactanos</h1>
         </div> 
