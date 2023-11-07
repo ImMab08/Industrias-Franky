@@ -27,17 +27,17 @@ function LandingSection() {
   const [image1Transform, image2Transform] = calculateImageTransform();
 
   return (
-    <section className="text-white h-[400px] md:min-h-screen mt-20 text-center relative overflow-hidden flex items-center justify-center">
+    <section className="text-white h-screen md:mt-10 text-center relative flex items-center justify-center">
 
       <div className=" ">
           <h1 className="text-3xl lg:text-5xl font-normal">
             Si puedes imaginarlo,
           </h1>
-          <h1 className="lg:pt-5 text-4xl lg:text-5xl font-extrabold">
+          <h1 className=" text-4xl lg:text-5xl font-extrabold">
             podemos <span className="text-terciary relative z-10">programarlo.</span>
           </h1>
-          <h1 className=" text-base lg:text-lg text-terciary pt-12 lg:pt-20 font-medium ">¡Qué esperas para entrar al mundo digital!</h1>
-          <img className=" w-10 mt-20 md:mt-5 mx-auto rounded-full" src="/img/arrow-down-section.svg" alt="Imagen" />
+          <h1 className=" text-base lg:text-lg text-terciary pt-12 md:pt-20 font-medium ">¡Qué esperas para entrar al mundo digital!</h1>
+          <img className=" w-10 md:mt-5 mx-auto rounded-full" src="/img/arrow-down-section.svg" alt="Imagen" />
       </div>
 
       <div className="absolute top-0 bottom-0 h-full w-full z-0 flex flex-row items-center justify-between">
