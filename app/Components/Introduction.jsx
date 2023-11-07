@@ -4,7 +4,7 @@ import '../globals.css';
 
 export default function Introduction() {
   return (
-    <div id='about' className=' h-screen'>
+    <div id='about' className=''>
       <div class=" bg-[#0c0c0c]">
         <div className='custom-shape-divider-top-1698810401'>
           <svg

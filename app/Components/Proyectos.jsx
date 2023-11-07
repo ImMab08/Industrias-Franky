@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Proyectos() {
   return (
-    <div className='h-screen md:mt-32'>
+    <div className='my-20'>
       <h1 className='text-white text-center font-bold text-2xl md:text-3xl'> Algunos de nuestros proyectos</h1>
       <div className=' flex items-center flex-col md:flex-row md:justify-between'>
         <div className='transform transition-transform duration-300 ease-in-out hover:scale-110 mt-10 md:ml-20'>
